@@ -1,0 +1,53 @@
+/* TEXT ELEMENTS */
+p {
+
+}
+a {
+	font-weight: 700;
+	color: #78A9D6;
+	text-decoration: none;
+}
+code {
+	background-color: #1D232F;
+	color: #fff;
+}
+mark {
+	background-color: #78A9D6;
+}
+blockquote {
+	font-size: 20px;
+	font-weight: 300;
+	background-color: #1D232F;
+	color: #fff;
+	margin: 0;
+	padding: 40px 28px;
+	width: 50%;
+	margin-left: 51%;
+}
+blockquote:before {
+	content: open-quote;
+}
+blockquote:after {
+	content: close-quote;
+}
+blockquote:before, blockquote:after {
+	color: #FF0091;
+	font-size: 24px;
+}
+ul li {
+	list-style: none;
+} 
+ul li:before {
+	content:'\25A0';
+	margin-right: 10px;
+	color: #78A9D6; 
+}
+ol li {
+    list-style-type: none;
+    counter-increment: list;
+}
+ol li:before{
+	content: counter(list) ".";
+	color: #78A9D6;
+	margin-right: 10px;
+}
