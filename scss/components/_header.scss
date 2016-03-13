@@ -2,7 +2,7 @@
 .top-color {
 	margin-top: 0;
 	padding: 60px 70px 1px;
-	color: #fff;
+	color: $color-w;
 }
 .logo-img {
 	width: 300px;
@@ -13,24 +13,27 @@
 	padding: 0;
 	text-align: center;
 	margin-bottom: 3px;
-}
-.menu-item:before {
+
+	&-item {
+		display: inline-block;
+		margin: auto 5%;
+
+		a {
+			color: $color-two;
+			font-weight: 300;
+			font-size: 36px;
+		}
+		a:hover {
+			color: $color-six;
+			border-bottom: 3px solid $color-six;
+		}
+		a:active {
+			color: $color-one;
+			border-bottom: 3px solid $color-one;
+		}
+	}
+
+	&-item:before {
 	content: none;
-}
-.menu-item {
-	display: inline-block;
-	margin: auto 5%;
-}
-.menu-item a {
-	color: #1D232F;
-	font-weight: 300;
-	font-size: 36px;
-}
-.menu-item a:hover {
-	color: #78A9D6;
-	border-bottom: 3px solid #78A9D6;
-}
-.menu-item a:active {
-	color: #FF0091;
-	border-bottom: 3px solid #FF0091;
+	}
 }
