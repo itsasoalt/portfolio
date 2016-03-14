@@ -17,3 +17,4 @@ gulp.task('css',function(){
 gulp.task('default', ['css'], function(){
 	gulp.watch('src/scss/**/*.scss', ['css']);
 });
+// cortar proceso ctrl+C
