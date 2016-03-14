@@ -35,7 +35,11 @@ gulp.task('css',function(){
 	.pipe(gulp.dest('dist/css'));
 });
 
-gulp.task('default', function() {
+gulp.task('html', function() {
+	return gulp.src()
+})
+
+gulp.task('default', [], function() {
     browserSync.init({
         server: {
             baseDir: "./"
@@ -43,6 +47,7 @@ gulp.task('default', function() {
         files: ['./dist/css/main.css']
     });
     gulp.watch('./src/scss/**/*.scss', ['css']);
+    gulp.watch('./src/*.html', ['html']);
 });
 
 // cortar proceso ctrl+C
