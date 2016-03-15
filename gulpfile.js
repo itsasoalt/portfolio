@@ -2,11 +2,13 @@ var gulp = require('gulp');
 var sass = require('gulp-sass');
 var autoprefixer = require('gulp-autoprefixer');
 var plumber = require('gulp-plumber');
+var imagemin = require('imagemin');
 
 var beep = require('beepbeep');
 var colors = require('colors');
 
 var browserSync = require('browser-sync').create();
+var reload      = require('browser-sync').reload;
 
 
 var onError = function(err) {
@@ -20,7 +22,7 @@ var onError = function(err) {
   this.emit('end');
 };
 
-gulp.task('css',function(){
+gulp.task('css',function() {
 	return gulp.src('src/scss/main.scss')
 	.pipe(plumber({
 		erorHandler: onError
@@ -36,10 +38,11 @@ gulp.task('css',function(){
 });
 
 gulp.task('html', function() {
-	return gulp.src()
-})
+    return gulp.src('./src/*.html')
+    .pipe(gulp.dest('./dist'));
+});
 
-gulp.task('default', [], function() {
+gulp.task('default', ['css','html'], function() {
     browserSync.init({
         server: {
             baseDir: "./"
@@ -47,7 +50,7 @@ gulp.task('default', [], function() {
         files: ['./dist/css/main.css']
     });
     gulp.watch('./src/scss/**/*.scss', ['css']);
-    gulp.watch('./src/*.html', ['html']);
+    gulp.watch('./dist/*.html', ['html']);
 });
 
 // cortar proceso ctrl+C
