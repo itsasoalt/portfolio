@@ -2,11 +2,12 @@ var gulp = require('gulp');
 var sass = require('gulp-sass');
 var autoprefixer = require('gulp-autoprefixer');
 var plumber = require('gulp-plumber');
-var imagemin = require('imagemin');
 var browserSync = require('browser-sync').create();
 
 var imagemin = require('gulp-imagemin');
 var pngquant = require('imagemin-pngquant');
+
+var ghPages = require('gulp-gh-pages');
 
 //Mensaje de error en terminal
 var beep = require('beepbeep');
@@ -54,6 +55,12 @@ gulp.task('imagemin', function() {
             use: [pngquant()]
         }))
     .pipe(gulp.dest('./dist/img'));
+});
+
+//deploy
+gulp.task('deploy', function() {
+  return gulp.src('./dist/**/*')
+    .pipe(ghPages());
 });
 
 //Tarea por defecto GULP que muestra los cambios en tiempo real
