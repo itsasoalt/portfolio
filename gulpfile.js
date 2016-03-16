@@ -8,7 +8,6 @@ var beep = require('beepbeep');
 var colors = require('colors');
 
 var browserSync = require('browser-sync').create();
-var reload      = require('browser-sync').reload;
 
 
 var onError = function(err) {
@@ -23,7 +22,7 @@ var onError = function(err) {
 };
 
 gulp.task('css',function() {
-	return gulp.src('src/scss/main.scss')
+	return gulp.src('./src/scss/main.scss')
 	.pipe(plumber({
 		erorHandler: onError
 	}))
@@ -34,7 +33,7 @@ gulp.task('css',function() {
 			'> 1%'
 		]
 	}))
-	.pipe(gulp.dest('dist/css'));
+	.pipe(gulp.dest('./dist/css'));
 });
 
 gulp.task('html', function() {
@@ -45,12 +44,13 @@ gulp.task('html', function() {
 gulp.task('default', ['css','html'], function() {
     browserSync.init({
         server: {
-            baseDir: "./"
+            baseDir: "./dist"
         },
         files: ['./dist/css/main.css']
     });
     gulp.watch('./src/scss/**/*.scss', ['css']);
-    gulp.watch('./dist/*.html', ['html']);
+    gulp.watch('./src/*.html', ['html']);
+    gulp.watch('./dist/*.html').on('change',browserSync.reload);
 });
 
 // cortar proceso ctrl+C
