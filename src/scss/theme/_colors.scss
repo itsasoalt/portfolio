@@ -1,14 +1,33 @@
 /* COLORS */
-$color-one: #FF0091; /*FUCHIA*/
+$color-w: #fff;
 
-$color-two: #1D232F; /*casi negro*/
+$color-one: #FF0091;
+.color-one {
+	background-color: $color-one;
+}
 
-$color-three: #EDE6B1; /* ? */
+$color-two: #1D232F;
+.color-two {
+	background-color: $color-two;
+	color: $color-w;
+}
 
-$color-four: #FDFBE9; /* ? */
+$color-three: #EDE6B1;
+.color-three {
+	background-color: $color-three;
+}
 
-$color-five: #DE9BDF; /* ? */
+$color-four: #FDFBE9;
+.color-four {
+	background-color: $color-four;
+}
 
-$color-six: #78A9D6; /* ? */
+$color-five: #DE9BDF;
+.color-five {
+	background-color: $color-five;
+}
 
-$color-w: #fff; /*WHITE*/
+$color-six: #78A9D6;
+.color-six {
+	background-color: $color-six;
+}
