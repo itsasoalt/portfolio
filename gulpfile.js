@@ -5,6 +5,9 @@ var plumber = require('gulp-plumber');
 var imagemin = require('imagemin');
 var browserSync = require('browser-sync').create();
 
+var imagemin = require('gulp-imagemin');
+var pngquant = require('imagemin-pngquant');
+
 //Mensaje de error en terminal
 var beep = require('beepbeep');
 var colors = require('colors');
@@ -44,7 +47,12 @@ gulp.task('html', function() {
 
 //Copiar las IMG de SRC a DIST
 gulp.task('imagemin', function() {
-    return gulp.src('./src/img/*.png')
+    return gulp.src('./src/img/*')
+        .pipe(imagemin({
+            progressive: true,
+            svgoPlugins: [{removeViewBox: false}],
+            use: [pngquant()]
+        }))
     .pipe(gulp.dest('./dist/img'));
 });
 
@@ -56,7 +64,8 @@ gulp.task('default', ['css','html','imagemin'], function() {
         },
         files: ['./dist/css/main.css']
     });
-    gulp.watch('./src/scss/*.png', ['imagemin']);
+    gulp.watch('./src/scss/**/*.scss', ['css']);
+    gulp.watch('./src/img/*', ['imagemin']);
     gulp.watch('./src/*.html', ['html']);
     gulp.watch('./dist/*.html').on('change',browserSync.reload);
 });
