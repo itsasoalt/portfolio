@@ -1,0 +1,105 @@
+// NAV-MOBILE
+.nav-mobile {
+  position: fixed;
+  height: 100%;
+  top: 0;
+  right: 0;
+  width: 200px;
+  background: #fff;
+  box-shadow: 0px 0px 15px rgba(0,0,0,.6);
+  box-sizing: border-box;
+  transition: .3s ease-in-out;
+  color: #000;
+  z-index: 1;
+
+  &.closed {
+    right: -200px;
+  }
+  & .btn-anim-three {
+    position: fixed;
+    top: 8px;
+    right: 0px;
+  }
+  & .nav {
+    padding: 0;
+    margin-top: 50px;
+  }
+  & .nav>li {
+    list-style: none;
+    margin: 15px;
+  }
+  & .nav > li > a{
+    list-style: none;
+    font-size: 20px;
+    font-weight: 100;
+    color: #000;
+  }
+}
+
+// animated icons for nav-mobile
+.btn-anim-three{
+    background: rgba(0,0,0,.6);
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    position:relative;
+    margin: 10px 10px;
+
+    & span {
+      position: absolute;
+      height: 3px;
+      border-radius: 2px;
+      background: #fff;
+      transition: all .4s ease;
+
+      &.one {
+        width: 16px;
+        top: 8px;
+        left: 7px;
+      }
+
+      &.two {
+        width: 16px;
+        top: 14px;
+        left: 7px;
+      }
+
+      &.three {
+        width: 16px;
+        top: 20px;
+        left: 7px;
+      }
+    }
+
+    &.closed span {
+      &.one {
+        width: 20px;
+        top: 13px;
+        left: 5px;
+        transform: rotate(225deg);
+      }
+      &.two {
+        width: 3px;
+        left: 12px;
+      }
+      &.three {
+        width: 20px;
+        top: 13px;
+        left: 5px;
+        -webkit-transform: rotate(-225deg);
+        -moz-transform: rotate(-225deg);
+        transform: rotate(-225deg);
+      }
+    }
+}
+.visible-xs {
+	display: none;
+}
+@media all and (max-width: 1023px) {
+  .visible-xs {
+    display: block;
+  }
+  .hidden-xs {
+    display: none;
+  }
+}

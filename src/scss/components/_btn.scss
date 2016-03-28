@@ -1,10 +1,11 @@
-/* BOTONES */
+// BOTONES
 .btn {
 	text-transform: uppercase;
 	font-weight: 700;
 	display: inline-block;
 	vertical-align: middle;
 	text-align: center;
+	position: relative;
 
 	&-normal {
 	background-color: $color-one;
@@ -13,6 +14,10 @@
 		
 		&:hover {
 			background-color: $color-six;
+		}
+		&:after {
+			right: 0;
+			bottom: 0;
 		}
 	}
 
@@ -23,6 +28,10 @@
 		
 		&:hover {
 			color: $color-six;
+		}
+		&:after {
+			right: 0;
+			bottom: 0;
 		}
 	}
 
