@@ -1,20 +1,20 @@
 // TEXT ELEMENTS
-p {
+.p {
 
 }
-a {
+.a {
 	font-weight: 700;
 	color: $color-six;
 	text-decoration: none;
 }
-code {
+.code {
 	background-color: $color-two;
 	color: $color-w;
 }
-mark {
+.mark {
 	background-color: $color-six;
 }
-blockquote {
+.blockquote {
 	font-size: 20px;
 	font-weight: 300;
 	background-color: $color-two;
@@ -37,8 +37,8 @@ blockquote {
 		font-size: 24px;
 	}
 }
-ul {
-	li {
+.ul {
+	.li {
 		list-style: none;
 	&:before {
 		content:'\25A0';
@@ -48,8 +48,8 @@ ul {
 	}
 } 
 
-ol {
-	li {
+.ol {
+	.li {
     list-style-type: none;
     counter-increment: list;
     &:before {

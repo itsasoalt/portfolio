@@ -1,10 +1,9 @@
 // CABECERA WEB
 .header {
-	margin-top: 0;
-	position: relative;
+	position: absolute;
+	width: 100%;
 	color: $color-w;
 	background-color: $color-three;
-
 	height: 10.5rem;
 	@media all and (min-width: 1024px) {
 		height: 17.5rem;
@@ -12,17 +11,22 @@
 	&_img--logo {
 		display: block;
 		margin: 0 auto;
+		padding-top: 3.4rem;
 
 		height: 3.4rem;
+		@media all and (min-width: 768px) {
+		padding-top: 1.7rem;
+		}
 		@media all and (min-width: 1024px) {
 		height: 5.25rem;
+		padding-top: 5.25rem;
 		}
 	}
 	&_menu--icono {
 		position: absolute;
 		bottom: 0.45rem;
 		left: 2.25rem;
-		@media all and (min-width: 1024px) {
+		@media all and (min-width: 768px) {
 		display: none;
 		}
 	}
