@@ -2,18 +2,11 @@ body {
 	font-family: 'Work Sans', sans-serif;
 	color: $color-two;
 	font-weight: 400;
-	font-size: 16px; //1rem
-	line-height: 1.75rem
+	font-size: 14px; //1rem
+	line-height: 1.7rem;
+	@media all and (min-width: 1024px) {
+		font-size: 16px;
+		line-height: 1.75rem;
+	}
 }
 // CUERPO WEB
-.main-content {
-	padding: 20px 70px 30px;
-}
-.full-width {
-	padding-top: 28px;
-	padding-bottom: 28px;
-	padding-left: 70px;
-	padding-right: 60%;
-	margin-right: -70px;
-	margin-left: -70px;
-}

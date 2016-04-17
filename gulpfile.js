@@ -26,24 +26,30 @@ var onError = function(err) {
 
 //Convertir el SCSS a CSS
 gulp.task('css',function() {
-	return gulp.src('./src/scss/main.scss')
-	.pipe(plumber({
-		erorHandler: onError
-	}))
-	.pipe(sass())
-	.pipe(autoprefixer({
-		browsers: [
-			'last 2 versions',
-			'> 1%'
-		]
-	}))
-	.pipe(gulp.dest('./dist/css'));
+    return gulp.src('./src/scss/main.scss')
+    .pipe(plumber({
+        erorHandler: onError
+    }))
+    .pipe(sass())
+    .pipe(autoprefixer({
+        browsers: [
+            'last 2 versions',
+            '> 1%'
+        ]
+    }))
+    .pipe(gulp.dest('./dist/css'));
 });
 
 //Copiar el HTML de SRC a DIST
 gulp.task('html', function() {
     return gulp.src('./src/*.html')
     .pipe(gulp.dest('./dist'));
+});
+
+//Copiar el JS de SRC a DIST
+gulp.task('js', function() {
+    return gulp.src('./src/js/*.js')
+    .pipe(gulp.dest('./dist/js'));
 });
 
 //Copiar las IMG de SRC a DIST
@@ -64,7 +70,7 @@ gulp.task('deploy', function() {
 });
 
 //Tarea por defecto GULP que muestra los cambios en tiempo real
-gulp.task('default', ['css','html','imagemin'], function() {
+gulp.task('default', ['css','html','js','imagemin'], function() {
     browserSync.init({
         server: {
             baseDir: "./dist"
@@ -73,6 +79,7 @@ gulp.task('default', ['css','html','imagemin'], function() {
     });
     gulp.watch('./src/scss/**/*.scss', ['css']);
     gulp.watch('./src/img/*', ['imagemin']);
+    gulp.watch('./src/js/*.js', ['js']);
     gulp.watch('./src/*.html', ['html']);
     gulp.watch('./dist/*.html').on('change',browserSync.reload);
 });
