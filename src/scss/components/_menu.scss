@@ -97,12 +97,17 @@
 			top: 10.5rem;
 			right: 0;
 			background-color: $color-w;
+			transition: top 0.75s ease-in-out,
+						z-index 0s 0.75s;
 			box-sizing: border-box;
 			color: $color-two;
-			z-index: 0;
+			z-index: 1;
 
 			&.closed {
-				display: none;
+				z-index: -1;
+				top: 3.5rem;
+				transition: top 0.75s 0s ease-in-out,
+							z-index 0s;
 			}
 		}	
 	}
@@ -112,7 +117,6 @@
 			margin: 0 2.5rem;
 		}
 		@media all and (max-width: 767px) {
-			width: 100%;
 			border-bottom: 1px solid $color-two;
 			padding: 0.25rem 0 0.25rem 2.25rem;
 		}
