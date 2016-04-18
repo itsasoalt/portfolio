@@ -92,18 +92,17 @@
 	&--mobile {
 		// NAV-MOBILE
 		@media all and (max-width: 767px) {
-			position: fixed;
+			position: absolute;
 			width: 100%;
 			top: 10.5rem;
 			right: 0;
 			background-color: $color-w;
 			box-sizing: border-box;
-			transition: .75s ease-in-out;
 			color: $color-two;
-			z-index: -1;
+			z-index: 0;
 
 			&.closed {
-				top: 3.5rem;
+				display: none;
 			}
 		}	
 	}

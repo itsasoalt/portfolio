@@ -10,3 +10,16 @@ body {
 	}
 }
 // CUERPO WEB
+.section_container {
+	margin-top: 10.5rem;
+	@media all and (min-width: 1024px) {
+		margin-top: 17.5rem;
+	}
+}
+.section {
+	width: 100%;
+	display: block;
+}
+.section--highlight {
+	background-color: $color-four;
+}

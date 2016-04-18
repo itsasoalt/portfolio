@@ -8,10 +8,15 @@ h1, h2, h3 {
 h4, h5, h6 {
 	font-weight: 700;
 }
-h1 {
+.h1 {
 	font-size: 48px;
 	color: $color-one;
 	line-height: 84px;
+}
+.h1_message {
+	font-size: 20px;
+	color: $color-two;
+	font-weight: 300;
 }
 h2 {
 	font-size: 40px;
