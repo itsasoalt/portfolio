@@ -24,10 +24,20 @@
 	}
 	&_menu--icono {
 		position: absolute;
-		bottom: 0.45rem;
 		left: 2.25rem;
+		top: 0.3rem;
+		width: 20px;
 		@media all and (min-width: 768px) {
 		display: none;
 		}
 	}
+}
+
+
+.header_menu--active--fill {
+	fill: $color-one;
+}
+
+.header_menu--btn:hover .header_menu--active--fill {
+	fill: $color-six;
 }

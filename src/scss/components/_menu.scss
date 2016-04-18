@@ -70,15 +70,29 @@
 		line-height: 1.43rem;
 		vertical-align: middle;
 	}
+	.header_menu--icon--fill {
+		fill: $color-two;
+	}
 	.header_menu--item a:hover {
 		color: $color-six;
 	}
+	.header_menu--item a:hover .header_menu--icon--fill {
+		fill: $color-six;
+	}
+
 	.header_menu--item--about,
 	.header_menu--item--portfolio,
 	.header_menu--item--contact {
 		display: inline-block;
-		font-size: 1.43rem;
+		width: 20px;
 		margin-right: 0.5rem;
+	}
+	.header_menu--item--about{
+		height: 20px;
+	}
+	.header_menu--item--portfolio,
+	.header_menu--item--contact {
+		height: 17px;
 	}
 	// animated icons for nav-mobile
 	.header_menu--btn{
@@ -98,7 +112,7 @@
 			height: 3px;
 			border-radius: 2px;
 			background: $color-one;
-			transition: all .4s ease;
+			transition: transform .6s ease;
 
 			&.one {
 				width: 20px;
@@ -117,6 +131,10 @@
 				top: 20px;
 				left: 7px;
 			}
+		}
+
+		&:hover span {
+			background-color: $color-six;
 		}
 
 		&.closed span {

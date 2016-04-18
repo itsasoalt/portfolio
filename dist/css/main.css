@@ -290,11 +290,18 @@ h6 {
         padding-top: 5.25rem; } }
   .header_menu--icono {
     position: absolute;
-    bottom: 0.45rem;
-    left: 2.25rem; }
+    left: 2.25rem;
+    top: 0.3rem;
+    width: 20px; }
     @media all and (min-width: 768px) {
       .header_menu--icono {
         display: none; } }
+
+.header_menu--active--fill {
+  fill: #FF0091; }
+
+.header_menu--btn:hover .header_menu--active--fill {
+  fill: #78A9D6; }
 
 .btn {
   text-transform: uppercase;
@@ -391,14 +398,23 @@ h6 {
     font-size: 1.43rem;
     line-height: 1.43rem;
     vertical-align: middle; }
+  .header_menu--icon--fill {
+    fill: #1D232F; }
   .header_menu--item a:hover {
     color: #78A9D6; }
+  .header_menu--item a:hover .header_menu--icon--fill {
+    fill: #78A9D6; }
   .header_menu--item--about,
   .header_menu--item--portfolio,
   .header_menu--item--contact {
     display: inline-block;
-    font-size: 1.43rem;
+    width: 20px;
     margin-right: 0.5rem; }
+  .header_menu--item--about {
+    height: 20px; }
+  .header_menu--item--portfolio,
+  .header_menu--item--contact {
+    height: 17px; }
   .header_menu--btn {
     position: absolute;
     bottom: 2.625rem;
@@ -414,8 +430,10 @@ h6 {
       height: 3px;
       border-radius: 2px;
       background: #FF0091;
-      -webkit-transition: all .4s ease;
-      transition: all .4s ease; }
+      -webkit-transition: -webkit-transform .6s ease;
+      transition: -webkit-transform .6s ease;
+      transition: transform .6s ease;
+      transition: transform .6s ease, -webkit-transform .6s ease; }
       .header_menu--btn span.one {
         width: 20px;
         top: 8px;
@@ -428,6 +446,8 @@ h6 {
         width: 20px;
         top: 20px;
         left: 7px; }
+    .header_menu--btn:hover span {
+      background-color: #78A9D6; }
     .header_menu--btn.closed span.one {
       width: 20px;
       top: 13px;
