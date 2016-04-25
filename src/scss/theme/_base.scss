@@ -15,6 +15,12 @@ body {
 
 	margin: 0;
 	padding: 1rem;
+	@media all and (min-width: 768px) {
+		padding: 1rem 2rem;
+	}
+	@media all and (min-width: 1024px) {
+		padding: 1rem 3rem;
+	}
 
 	&_container {
 		margin-top: 10.5rem;
@@ -22,10 +28,31 @@ body {
 			margin-top: 17.5rem;
 		}
 	}
+	&_container--flex {
+		display: flex;
+		flex-direction: column;
+		@media all and (min-width: 768px) {
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: flex-end;
+		}
+	}
 	&--top {
 		z-index: 0;
 	}
 	&--highlight {
 		background-color: $color-four;
+		align-items: flex-start;
+		
+	}
+	&--column {
+		@media all and (min-width: 768px) {
+			flex-basis: 30%;
+		}
+	}
+	&--column--left {
+		@media all and (min-width: 768px) {
+			flex-basis: 60%;
+		}
 	}
 }

@@ -192,15 +192,62 @@ body {
   display: block;
   margin: 0;
   padding: 1rem; }
+  @media all and (min-width: 768px) {
+    .section {
+      padding: 1rem 2rem; } }
+  @media all and (min-width: 1024px) {
+    .section {
+      padding: 1rem 3rem; } }
   .section_container {
     margin-top: 10.5rem; }
     @media all and (min-width: 1024px) {
       .section_container {
         margin-top: 17.5rem; } }
+  .section_container--flex {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    @media all and (min-width: 768px) {
+      .section_container--flex {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: row;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        -webkit-box-align: end;
+        -webkit-align-items: flex-end;
+            -ms-flex-align: end;
+                    -ms-grid-row-align: flex-end;
+                align-items: flex-end; } }
   .section--top {
     z-index: 0; }
   .section--highlight {
-    background-color: #FDFBE9; }
+    background-color: #FDFBE9;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+                -ms-grid-row-align: flex-start;
+            align-items: flex-start; }
+  @media all and (min-width: 768px) {
+    .section--column {
+      -webkit-flex-basis: 30%;
+          -ms-flex-preferred-size: 30%;
+              flex-basis: 30%; } }
+  @media all and (min-width: 768px) {
+    .section--column--left {
+      -webkit-flex-basis: 60%;
+          -ms-flex-preferred-size: 60%;
+              flex-basis: 60%; } }
 
 /* TITLES */
 h1, h2, h3, h4, h5, h6 {
@@ -527,15 +574,6 @@ form ul {
 
 .img_index--perfil {
   width: 100%; }
-  @media all and (min-width: 420px) {
-    .img_index--perfil {
-      width: 400px;
-      display: inline-block;
-      float: right;
-      margin-top: -314px; } }
-
-.bajar {
-  z-index: -1; }
 
 .img_index--inline {
   display: inline-block; }
@@ -544,7 +582,7 @@ form ul {
   position: absolute;
   content: "";
   right: 0;
-  bottom: 9px;
+  bottom: 8px;
   line-height: 0;
   width: 0;
   height: 0;
@@ -572,14 +610,13 @@ form ul {
 
 .img_index--skill {
   height: 2.5rem;
-  margin: 1.5rem; }
-  @media all and (min-width: 1024px) {
+  margin: 0.5rem; }
+  @media all and (min-width: 768px) {
     .img_index--skill {
       height: 3rem; } }
 
 .img_index--content {
-  width: 45vw;
-  max-width: 200px; }
+  width: 45vw; }
   @media all and (min-width: 768px) {
     .img_index--content {
       width: 30vw;
