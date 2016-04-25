@@ -1,0 +1,60 @@
+//img
+.img_index {
+	position: relative;
+}
+.img_index--perfil {
+	width: 100%;
+	@media all and (min-width: 420px) {
+		width: 400px;
+		display: inline-block;
+		float: right;
+		margin-top: -314px;
+	}
+}
+.bajar {
+z-index: -1;
+}
+.img_index--inline {
+	display: inline-block;
+}
+.img_index:after {
+	position: absolute;
+	content: "";
+	right: 0;
+	bottom: 9px;
+	line-height: 0;
+	width: 0;
+	height: 0;
+	border-top: solid 2rem transparent;
+	border-left: solid 2rem transparent;
+	border-right: solid 2rem $color-w;
+	border-bottom: solid 2rem $color-w;
+}
+.img_index--alt:after {
+	border-right: solid 2rem $color-one;
+	border-bottom: solid 2rem $color-one;
+}
+.img_index--container {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.img_index--skill {
+	height: 2.5rem;
+	margin: 1.5rem;
+	@media all and (min-width: 1024px) {
+		height: 3rem;
+	}
+}
+.img_index--content {
+	width: 45vw;
+	max-width: 200px;
+	@media all and (min-width: 768px) {
+		width: 30vw;
+		max-width: 300px;
+	}
+	@media all and (min-width: 1024px) {
+		width: 15vw;
+		max-width: 400px;
+	}
+}

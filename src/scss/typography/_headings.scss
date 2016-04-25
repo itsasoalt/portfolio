@@ -9,14 +9,34 @@ h4, h5, h6 {
 	font-weight: 700;
 }
 .h1 {
-	font-size: 48px;
+	font-size: 8vw;
+	line-height: 2.5rem;
 	color: $color-one;
-	line-height: 84px;
+	white-space: nowrap;
+	transition: 0s 0.2s;
+	@media all and (min-width: 550px) {
+		font-size: 3rem;
+		line-height: 3.5rem;
+	}
 }
 .h1_message {
-	font-size: 20px;
+	font-size: 4vw;
+	line-height: 1.5rem;
 	color: $color-two;
 	font-weight: 300;
+	transition: 0s 0.4s;
+	margin-bottom: 2rem;
+	@media all and (min-width: 550px) {
+		font-size: 1.4rem;
+	}
+}
+.h1_message--color {
+	color: transparent;
+	transition: 0s 0.4s;
+}
+.h1--color {
+	color: transparent;
+	transition: 0s 0.5s;
 }
 h2 {
 	font-size: 40px;

@@ -2,56 +2,56 @@
 .btn {
 	text-transform: uppercase;
 	font-weight: 700;
-	display: inline-block;
-	vertical-align: middle;
+	text-decoration: none;
 	text-align: center;
-	position: relative;
+	line-height: 3.5rem;
 
-	&-normal {
 	background-color: $color-one;
 	color: $color-w;
-	border: 3px solid $color-w;
-		
-		&:hover {
-			background-color: $color-six;
-		}
-		&:after {
-			right: 0;
-			bottom: 0;
-		}
-	}
+	border: 3px solid $color-one;
 
-	&-alt {
+	height: 3.5rem;
+	min-width: 12rem;
+	max-width: 24rem;
+	position: relative;
+	margin: 0 auto;
+	display: block;
+	cursor: pointer;
+		
+	&:hover {
+		background-color: $color-six;
+		border: 3px solid $color-six;
+	}
+	&:after {
+		position: absolute;
+		content: "";
+		right: -3px;
+		bottom: -3px;
+		line-height: 0;
+		width: 0;
+		height: 0;
+		border-top: solid 1rem transparent;
+		border-left: solid 1rem transparent;
+		border-right: solid 1rem $color-w;
+		border-bottom: solid 1rem $color-w;
+	}
+	&--alt {
 		background-color: $color-w;
-		border: 3px solid $color-five;
-		color: $color-five;
-		
+		color: $color-one;
+		border: 3px solid $color-one;
+			
 		&:hover {
+			background-color: $color-w;
+			border: 3px solid $color-six;
 			color: $color-six;
+			&:after {
+				border-right: solid 1rem $color-six;
+			border-bottom: solid 1rem $color-six;
+			}
 		}
 		&:after {
-			right: 0;
-			bottom: 0;
+			border-right: solid 1rem $color-one;
+			border-bottom: solid 1rem $color-one;
 		}
 	}
-
-	&-lg {
-		width: 300px;
-		height: 75px;
-		font-size: 20px;
-		line-height: 75px;
-	}
-
-	&-md {
-		width: 150px;
-		height: 50px;
-		line-height: 50px;
-	}
-
 }
-
-
-
-
-
-
