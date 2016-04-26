@@ -1,6 +1,10 @@
 //img
+img {
+	line-height: 0;
+}
 .img_index {
 	position: relative;
+	line-height: 0;
 }
 .img_index--perfil {
 	width: 100%;
@@ -12,7 +16,7 @@
 	position: absolute;
 	content: "";
 	right: 0;
-	bottom: 8px;
+	bottom: 0;
 	line-height: 0;
 	width: 0;
 	height: 0;
@@ -39,6 +43,7 @@
 }
 .img_index--content {
 	width: 45vw;
+	margin: 1rem auto;
 	@media all and (min-width: 768px) {
 		width: 30vw;
 		max-width: 300px;

@@ -76,25 +76,29 @@
 	display: block;
 	cursor: pointer;
 	display: inline-block;
-}
-.btn_send--after {
-	position: relative;
-	display: inline-block;
-}
-.btn_send--after:after {
-	position: absolute;
-	content: "";
-	right: -3px;
-	bottom: -3px;
-	line-height: 0;
-	width: 0;
-	height: 0;
-	border-top: solid 1rem transparent;
-	border-left: solid 1rem transparent;
-	border-right: solid 1rem $color-w;
-	border-bottom: solid 1rem $color-w;
-}
-.btn_send:hover {
+
+	&:hover {
 		background-color: $color-six;
 		border: 3px solid $color-six;
 	}
+
+	&--after {
+		position: relative;
+		display: inline-block;
+		&:after {
+			position: absolute;
+			content: "";
+			right: -3px;
+			bottom: -3px;
+			line-height: 0;
+			width: 0;
+			height: 0;
+			border-top: solid 1rem transparent;
+			border-left: solid 1rem transparent;
+			border-right: solid 1rem $color-w;
+			border-bottom: solid 1rem $color-w;
+		}
+	}
+}
+
+

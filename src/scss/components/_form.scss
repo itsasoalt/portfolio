@@ -15,16 +15,17 @@ textarea {
 	display: block;
 	margin:0;
 	padding: 0;
-}
-label,
-input,
-textarea {
 	width: 100%;
-	
+	box-sizing: border-box;
 }
+
 label, input {
 	height: 3rem;
 }
+textarea {
+
+}
+
 input:not(.btn_send),
 textarea {
 	border: 3px solid $color-five;
@@ -38,6 +39,7 @@ textarea:focus {
 	border: 3px solid $color-four;
 	background-image: url(../img/input--corner-focus.png);
 }
+
 .hide {
 	display: none;
 }

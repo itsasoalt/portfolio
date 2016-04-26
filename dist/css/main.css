@@ -442,27 +442,24 @@ h6 {
   display: block;
   cursor: pointer;
   display: inline-block; }
-
-.btn_send--after {
-  position: relative;
-  display: inline-block; }
-
-.btn_send--after:after {
-  position: absolute;
-  content: "";
-  right: -3px;
-  bottom: -3px;
-  line-height: 0;
-  width: 0;
-  height: 0;
-  border-top: solid 1rem transparent;
-  border-left: solid 1rem transparent;
-  border-right: solid 1rem #fff;
-  border-bottom: solid 1rem #fff; }
-
-.btn_send:hover {
-  background-color: #78A9D6;
-  border: 3px solid #78A9D6; }
+  .btn_send:hover {
+    background-color: #78A9D6;
+    border: 3px solid #78A9D6; }
+  .btn_send--after {
+    position: relative;
+    display: inline-block; }
+    .btn_send--after:after {
+      position: absolute;
+      content: "";
+      right: -3px;
+      bottom: -3px;
+      line-height: 0;
+      width: 0;
+      height: 0;
+      border-top: solid 1rem transparent;
+      border-left: solid 1rem transparent;
+      border-right: solid 1rem #fff;
+      border-bottom: solid 1rem #fff; }
 
 .header_menu {
   padding: 0;
@@ -607,8 +604,12 @@ h6 {
 form ul {
   padding: 0; }
 
+img {
+  line-height: 0; }
+
 .img_index {
-  position: relative; }
+  position: relative;
+  line-height: 0; }
 
 .img_index--perfil {
   width: 100%; }
@@ -620,7 +621,7 @@ form ul {
   position: absolute;
   content: "";
   right: 0;
-  bottom: 8px;
+  bottom: 0;
   line-height: 0;
   width: 0;
   height: 0;
@@ -654,7 +655,8 @@ form ul {
       height: 3rem; } }
 
 .img_index--content {
-  width: 45vw; }
+  width: 45vw;
+  margin: 1rem auto; }
   @media all and (min-width: 768px) {
     .img_index--content {
       width: 30vw;
@@ -680,12 +682,9 @@ input,
 textarea {
   display: block;
   margin: 0;
-  padding: 0; }
-
-label,
-input,
-textarea {
-  width: 100%; }
+  padding: 0;
+  width: 100%;
+  box-sizing: border-box; }
 
 label, input {
   height: 3rem; }
