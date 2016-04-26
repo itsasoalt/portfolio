@@ -426,6 +426,44 @@ h6 {
       border-right: solid 1rem #FF0091;
       border-bottom: solid 1rem #FF0091; }
 
+.btn_send {
+  text-transform: uppercase;
+  font-weight: 700;
+  text-decoration: none;
+  text-align: center;
+  background-color: #FF0091;
+  color: #fff;
+  border: 3px solid #FF0091;
+  min-width: 12rem;
+  max-width: 24rem;
+  height: 3.5rem;
+  position: relative;
+  margin: 0 auto;
+  display: block;
+  cursor: pointer;
+  display: inline-block; }
+
+.btn_send--after {
+  position: relative;
+  display: inline-block; }
+
+.btn_send--after:after {
+  position: absolute;
+  content: "";
+  right: -3px;
+  bottom: -3px;
+  line-height: 0;
+  width: 0;
+  height: 0;
+  border-top: solid 1rem transparent;
+  border-left: solid 1rem transparent;
+  border-right: solid 1rem #fff;
+  border-bottom: solid 1rem #fff; }
+
+.btn_send:hover {
+  background-color: #78A9D6;
+  border: 3px solid #78A9D6; }
+
 .header_menu {
   padding: 0;
   margin: 0; }
@@ -625,3 +663,45 @@ form ul {
     .img_index--content {
       width: 15vw;
       max-width: 400px; } }
+
+fieldset {
+  border: transparent;
+  padding: 0;
+  margin: 0; }
+
+legend {
+  color: transparent;
+  line-height: 0;
+  margin: 0;
+  padding: 0; }
+
+label,
+input,
+textarea {
+  display: block;
+  margin: 0;
+  padding: 0; }
+
+label,
+input,
+textarea {
+  width: 100%; }
+
+label, input {
+  height: 3rem; }
+
+input:not(.btn_send),
+textarea {
+  border: 3px solid #DE9BDF;
+  background-image: url(../img/input--corner.png);
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  background-size: 1.5rem; }
+
+input:not(.btn_send):focus,
+textarea:focus {
+  border: 3px solid #FDFBE9;
+  background-image: url(../img/input--corner-focus.png); }
+
+.hide {
+  display: none; }

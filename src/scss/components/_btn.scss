@@ -35,6 +35,7 @@
 		border-right: solid 1rem $color-w;
 		border-bottom: solid 1rem $color-w;
 	}
+	
 	&--alt {
 		background-color: $color-w;
 		color: $color-one;
@@ -46,7 +47,7 @@
 			color: $color-six;
 			&:after {
 				border-right: solid 1rem $color-six;
-			border-bottom: solid 1rem $color-six;
+				border-bottom: solid 1rem $color-six;
 			}
 		}
 		&:after {
@@ -55,3 +56,45 @@
 		}
 	}
 }
+
+//BTN FORMULARIO
+.btn_send {
+	text-transform: uppercase;
+	font-weight: 700;
+	text-decoration: none;
+	text-align: center;
+
+	background-color: $color-one;
+	color: $color-w;
+	border: 3px solid $color-one;
+	min-width: 12rem;
+	max-width: 24rem;
+	height: 3.5rem;
+	
+	position: relative;
+	margin: 0 auto;
+	display: block;
+	cursor: pointer;
+	display: inline-block;
+}
+.btn_send--after {
+	position: relative;
+	display: inline-block;
+}
+.btn_send--after:after {
+	position: absolute;
+	content: "";
+	right: -3px;
+	bottom: -3px;
+	line-height: 0;
+	width: 0;
+	height: 0;
+	border-top: solid 1rem transparent;
+	border-left: solid 1rem transparent;
+	border-right: solid 1rem $color-w;
+	border-bottom: solid 1rem $color-w;
+}
+.btn_send:hover {
+		background-color: $color-six;
+		border: 3px solid $color-six;
+	}
