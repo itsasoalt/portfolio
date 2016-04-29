@@ -231,6 +231,12 @@ body {
                 align-items: flex-end; } }
   .section_container--blockquote {
     background-color: #1D232F; }
+    @media all and (min-width: 768px) {
+      .section_container--blockquote {
+        max-width: 40%;
+        float: right;
+        margin-top: -3rem;
+        margin-bottom: 2rem; } }
   .section--highlight {
     background-color: #FDFBE9;
     -webkit-box-align: start;
@@ -238,6 +244,9 @@ body {
         -ms-flex-align: start;
                 -ms-grid-row-align: flex-start;
             align-items: flex-start; }
+    @media all and (min-width: 768px) {
+      .section--highlight--bqspace {
+        padding-bottom: 3rem; } }
   @media all and (min-width: 768px) {
     .section--column {
       -webkit-flex-basis: 30%;
@@ -623,10 +632,26 @@ h6 {
   .contact_info a:active .contact_info--icon {
     fill: #FF0091; }
 
+.contact_img--controler--father {
+  position: relative; }
+
+@media all and (min-width: 768px) {
+  .contact_img--controler {
+    width: 40%;
+    float: left; } }
+
+@media all and (min-width: 1024px) {
+  .contact_img--controler {
+    position: absolute;
+    float: none;
+    width: 20rem;
+    top: -31rem;
+    right: 0; } }
+
 img {
   line-height: 0; }
 
-.img_index {
+.img {
   position: relative;
   line-height: 0; }
 
@@ -636,7 +661,7 @@ img {
 .img_index--inline {
   display: inline-block; }
 
-.img_index:after {
+.img:after {
   position: absolute;
   content: "";
   right: 0;
@@ -649,9 +674,14 @@ img {
   border-right: solid 2rem #fff;
   border-bottom: solid 2rem #fff; }
 
-.img_index--alt:after {
+.img--one:after {
   border-right: solid 2rem #FF0091;
   border-bottom: solid 2rem #FF0091; }
+
+@media all and (min-width: 1024px) {
+  .img--four:after {
+    border-right: solid 2rem #FDFBE9;
+    border-bottom: solid 2rem #FDFBE9; } }
 
 .img_index--container {
   display: -webkit-box;
@@ -685,6 +715,9 @@ img {
       width: 15vw;
       max-width: 400px; } }
 
+.img_contact {
+  width: 100%; }
+
 fieldset {
   border: transparent;
   padding: 0;
@@ -716,9 +749,6 @@ textarea {
   margin-bottom: 1.75rem;
   padding: .5rem;
   line-height: 1rem; }
-  @media all and (min-width: 1024px) {
-    textarea {
-      height: 12rem; } }
 
 input:not(.btn_send),
 textarea {

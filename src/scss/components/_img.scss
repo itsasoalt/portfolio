@@ -2,7 +2,7 @@
 img {
 	line-height: 0;
 }
-.img_index {
+.img {
 	position: relative;
 	line-height: 0;
 }
@@ -12,7 +12,7 @@ img {
 .img_index--inline {
 	display: inline-block;
 }
-.img_index:after {
+.img:after {
 	position: absolute;
 	content: "";
 	right: 0;
@@ -25,9 +25,15 @@ img {
 	border-right: solid 2rem $color-w;
 	border-bottom: solid 2rem $color-w;
 }
-.img_index--alt:after {
+.img--one:after {
 	border-right: solid 2rem $color-one;
 	border-bottom: solid 2rem $color-one;
+}
+.img--four:after {
+	@media all and (min-width: 1024px) {
+		border-right: solid 2rem $color-four;
+		border-bottom: solid 2rem $color-four;
+	}
 }
 .img_index--container {
 	display: flex;
@@ -52,4 +58,7 @@ img {
 		width: 15vw;
 		max-width: 400px;
 	}
+}
+.img_contact {
+	width: 100%;
 }

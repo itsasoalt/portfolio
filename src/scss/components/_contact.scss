@@ -37,3 +37,19 @@
 		fill: $color-one;
 	}
 }
+.contact_img--controler--father {
+	position: relative;
+}
+.contact_img--controler {
+	@media all and (min-width: 768px) {
+		width: 40%;
+		float: left;
+	}
+	@media all and (min-width: 1024px) {
+		position: absolute;
+		float: none;
+		width: 20rem;
+		top: -31rem;
+		right: 0;
+	}
+}
