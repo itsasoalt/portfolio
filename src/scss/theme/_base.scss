@@ -42,8 +42,12 @@ body {
 		@media all and (min-width: 768px) {
 			max-width: 40%;
 			float: right;
-			margin-top: -3rem;
 			margin-bottom: 2rem;
+		}
+		&--hl {
+			@media all and (min-width: 768px) {
+				margin-top: -3rem;
+			}
 		}
 	}
 	

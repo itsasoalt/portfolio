@@ -235,8 +235,10 @@ body {
       .section_container--blockquote {
         max-width: 40%;
         float: right;
-        margin-top: -3rem;
         margin-bottom: 2rem; } }
+    @media all and (min-width: 768px) {
+      .section_container--blockquote--hl {
+        margin-top: -3rem; } }
   .section--highlight {
     background-color: #FDFBE9;
     -webkit-box-align: start;
