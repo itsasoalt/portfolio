@@ -63,19 +63,14 @@
 	font-weight: 700;
 	text-decoration: none;
 	text-align: center;
-
 	background-color: $color-one;
 	color: $color-w;
 	border: 3px solid $color-one;
-	min-width: 12rem;
-	max-width: 24rem;
 	height: 3.5rem;
 	
 	position: relative;
-	margin: 0 auto;
-	display: block;
+	
 	cursor: pointer;
-	display: inline-block;
 
 	&:hover {
 		background-color: $color-six;
@@ -84,7 +79,10 @@
 
 	&--after {
 		position: relative;
-		display: inline-block;
+		display: block;
+		margin: 0 auto;
+		width: 12rem;
+		
 		&:after {
 			position: absolute;
 			content: "";

@@ -47,7 +47,7 @@
 					left: 7px;
 				}
 			}
-			&:hover span {
+			&:active span {
 				background-color: $color-six;
 			}
 			&.closed span {
@@ -84,7 +84,7 @@
 			&--fill {
 				fill: $color-one;
 			}
-			.header_menu--btn:hover &--fill {
+			.header_menu--btn:active &--fill {
 				fill: $color-six;
 			}
 		}
@@ -140,10 +140,12 @@
 				line-height: 1.43rem;	
 			}
 		}
-		& a:hover {
+		& a:active {
 			color: $color-six;
+		}
+		& a:hover {
 			@media all and (min-width: 768px) {
-				
+				color: $color-six;
 				border-bottom: 2px solid $color-six;
 			}
 		}
@@ -174,7 +176,7 @@
 	&--icon--fill {
 		@media all and (max-width: 767px) {
 			fill: $color-two;
-			.header_menu--item a:hover & {
+			.header_menu--item a:active & {
 				fill: $color-six;
 			}
 		}

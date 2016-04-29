@@ -17,12 +17,7 @@
 .blockquote {
 	font-size: 20px;
 	font-weight: 300;
-	background-color: $color-two;
 	color: $color-w;
-	margin: 0;
-	padding: 40px 28px;
-	width: 50%;
-	margin-left: 51%;
 
 	&:before {
 		content: open-quote;

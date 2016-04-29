@@ -17,13 +17,21 @@ textarea {
 	padding: 0;
 	width: 100%;
 	box-sizing: border-box;
+	line-height: 1.75rem;
 }
-
-label, input {
+input {
 	height: 3rem;
+	margin-bottom: 1.75rem;
+	padding: .5rem;
 }
 textarea {
-
+	height: 6rem;
+	margin-bottom: 1.75rem;
+	padding: .5rem;
+	line-height: 1rem;
+	@media all and (min-width: 1024px) {
+		height: 12rem;
+	}
 }
 
 input:not(.btn_send),
