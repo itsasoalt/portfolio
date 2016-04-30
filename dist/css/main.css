@@ -348,17 +348,17 @@ h6 {
     color: #FF0091;
     font-size: 24px; }
 
-.ul .li {
+ul li {
   list-style: none; }
-  .ul .li:before {
+  ul li:before {
     content: '\25A0';
     margin-right: 10px;
     color: #78A9D6; }
 
-.ol .li {
+ol li {
   list-style-type: none;
   counter-increment: list; }
-  .ol .li:before {
+  ol li:before {
     content: counter(list) ".";
     color: #78A9D6;
     margin-right: 10px; }

@@ -32,8 +32,8 @@
 		font-size: 24px;
 	}
 }
-.ul {
-	.li {
+ul {
+	li {
 		list-style: none;
 	&:before {
 		content:'\25A0';
@@ -43,8 +43,8 @@
 	}
 } 
 
-.ol {
-	.li {
+ol {
+	li {
     list-style-type: none;
     counter-increment: list;
     &:before {
