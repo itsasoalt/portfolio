@@ -654,8 +654,7 @@ img {
   line-height: 0; }
 
 .img {
-  position: relative;
-  line-height: 0; }
+  position: relative; }
 
 .img_index--perfil {
   width: 100%; }
@@ -679,6 +678,12 @@ img {
 .img--one:after {
   border-right: solid 2rem #FF0091;
   border-bottom: solid 2rem #FF0091; }
+
+.img--one--xs:after {
+  border-top: solid 1rem transparent;
+  border-left: solid 1rem transparent;
+  border-right: solid 1rem #FF0091;
+  border-bottom: solid 1rem #FF0091; }
 
 @media all and (min-width: 1024px) {
   .img--four:after {
@@ -716,6 +721,29 @@ img {
     .img_index--content {
       width: 15vw;
       max-width: 400px; } }
+
+.img_box {
+  margin-top: 1.75rem;
+  margin-bottom: 1.75rem; }
+
+.img_naow {
+  width: 100%; }
+
+.img_naow--logo {
+  padding: 3rem;
+  box-sizing: border-box; }
+
+.img_naow--icon {
+  width: 20%;
+  display: inline-block;
+  float: left;
+  margin-right: 2.5%;
+  margin-left: 2.5%; }
+
+.img_naow--icon--container:after {
+  content: "";
+  display: block;
+  clear: both; }
 
 .img_contact {
   width: 100%; }

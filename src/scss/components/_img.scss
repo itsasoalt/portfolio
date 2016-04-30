@@ -1,10 +1,9 @@
-//img
+// IMG GENERAL E INDEX
 img {
 	line-height: 0;
 }
 .img {
 	position: relative;
-	line-height: 0;
 }
 .img_index--perfil {
 	width: 100%;
@@ -28,6 +27,12 @@ img {
 .img--one:after {
 	border-right: solid 2rem $color-one;
 	border-bottom: solid 2rem $color-one;
+}
+.img--one--xs:after {
+	border-top: solid 1rem transparent;
+	border-left: solid 1rem transparent;
+	border-right: solid 1rem $color-one;
+	border-bottom: solid 1rem $color-one;
 }
 .img--four:after {
 	@media all and (min-width: 1024px) {
@@ -59,6 +64,35 @@ img {
 		max-width: 400px;
 	}
 }
+// PORTFOLIO
+// INEDI
+// NAOW
+.img_box {
+	margin-top: 1.75rem;
+	margin-bottom: 1.75rem;
+}
+.img_naow {
+	width: 100%;
+	
+}
+.img_naow--logo {
+	padding: 3rem;
+	box-sizing: border-box;
+}
+.img_naow--icon {
+	width: 20%;
+	display: inline-block;
+	float: left;
+	margin-right: 2.5%;
+	margin-left: 2.5%;
+}
+.img_naow--icon--container:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+// SOKAIRE
+// CONTACT
 .img_contact {
 	width: 100%;
 }
