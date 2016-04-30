@@ -654,6 +654,7 @@ img {
   line-height: 0; }
 
 .img {
+  line-height: 0;
   position: relative; }
 
 .img_index--perfil {
@@ -711,16 +712,16 @@ img {
       height: 3rem; } }
 
 .img_index--content {
-  width: 45vw;
+  width: 40vw;
   margin: 1rem auto; }
   @media all and (min-width: 768px) {
     .img_index--content {
-      width: 30vw;
-      max-width: 300px; } }
+      width: 25vw;
+      max-width: 280px; } }
   @media all and (min-width: 1024px) {
     .img_index--content {
-      width: 15vw;
-      max-width: 400px; } }
+      width: 12vw;
+      max-width: 340px; } }
 
 .img_box {
   margin-top: 1.75rem;
