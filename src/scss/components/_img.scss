@@ -25,6 +25,12 @@ img {
 	border-right: solid 2rem $color-w;
 	border-bottom: solid 2rem $color-w;
 }
+.img--xs:after {
+	border-top: solid 1rem transparent;
+	border-left: solid 1rem transparent;
+	border-right: solid 1rem $color-w;
+	border-bottom: solid 1rem $color-w;
+}
 .img--one:after {
 	border-right: solid 2rem $color-one;
 	border-bottom: solid 2rem $color-one;
@@ -74,7 +80,6 @@ img {
 }
 .img_naow {
 	width: 100%;
-	
 }
 .img_naow--logo {
 	padding: 3rem;
@@ -93,6 +98,29 @@ img {
 	clear: both;
 }
 // SOKAIRE
+.img_sok {
+	width: 100%;
+}
+.img_sok--rotate {
+	transform: rotate(90deg);
+	height: 100px;
+	margin: 0 15%;
+}
+.img_sok--xs {
+	display: inline-block;
+	width: 45%;
+	margin-right: 2.5%;
+	margin-left: 2.5%;
+	float: left;
+}
+.img_sok--md {
+	@media all and (min-width: 768px) {
+		width: 30%;
+		margin-right: 1.5%;
+		margin-left: 1.5%;
+		float: left;
+	}
+}
 // CONTACT
 .img_contact {
 	width: 100%;
