@@ -1,0 +1,52 @@
+form {
+}
+fieldset {
+	border: transparent;
+	padding: 0;
+	margin: 0;
+}
+legend {
+	color: transparent;
+	line-height: 0;
+	margin: 0;
+	padding: 0;
+}
+label,
+input,
+textarea {
+	display: block;
+	margin:0;
+	padding: 0;
+	width: 100%;
+	box-sizing: border-box;
+	line-height: 1.75rem;
+}
+input {
+	height: 3rem;
+	margin-bottom: 1.75rem;
+	padding: .5rem;
+}
+textarea {
+	height: 6rem;
+	margin-bottom: 1.75rem;
+	padding: .5rem;
+	line-height: 1rem;
+}
+
+input:not(.btn_send),
+textarea {
+	border: 3px solid $color-five;
+	background-image: url(../img/input--corner.png);
+	background-position: bottom right;
+	background-repeat: no-repeat;
+	background-size: 1.5rem;
+}
+input:not(.btn_send):focus,
+textarea:focus {
+	border: 3px solid $color-four;
+	background-image: url(../img/input--corner-focus.png);
+}
+
+.hide {
+	display: none;
+}

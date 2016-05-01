@@ -1,0 +1,32 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "BAU Web Design Master 2016 by Itsaso Altuna (@itsasoalt)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/itsasoalt/portfolio.git"
+  },
+  "author": "itsasoalt",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/itsasoalt/portfolio/issues"
+  },
+  "homepage": "https://github.com/itsasoalt/portfolio#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-colors": "^1.0.0",
+    "gulp-gh-pages": "^0.5.4",
+    "gulp-imagemin": "^2.4.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-sass": "^2.2.0",
+    "imagemin-pngquant": "^4.2.2"
+  },
+  "dependencies": {
+    "imagemin": "^4.0.0"
+  }
+}

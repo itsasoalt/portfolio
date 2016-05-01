@@ -1,0 +1,57 @@
+.contact{
+	&_info {
+		display: block;
+		padding: .5rem;
+		a {
+			text-decoration: none;
+			color: inherit;
+		}
+
+		&--label {
+			display: none;
+			@media all and (min-width: 768px) {
+				display: inline;
+				font-weight: bold;
+				margin-right: .5rem;
+			}
+		}
+		
+		&--icon {
+			width: 1.25rem;
+			height: 1.25rem;
+			fill: $color-two;
+			margin-right: .5rem;
+			margin-bottom: -.25rem;
+		}
+		@media all and (min-width: 1024px) {
+			& a:hover {
+				color: $color-six;
+			}
+			& a:hover &--icon {
+				fill: $color-six;
+			}
+		}
+		& a:active {
+			color: $color-one;
+		}
+		& a:active &--icon {
+			fill: $color-one;
+		}
+	}
+	&_img--controler--father {
+		position: relative;
+	}
+	&_img--controler {
+		@media all and (min-width: 768px) {
+			width: 40%;
+			float: left;
+		}
+		@media all and (min-width: 1024px) {
+			position: absolute;
+			float: none;
+			width: 20rem;
+			top: -31rem;
+			right: 0;
+		}
+	}
+}

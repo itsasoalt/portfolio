@@ -1,0 +1,197 @@
+.header_menu {
+	padding: 0;
+	margin: 0;
+	@media all and (min-width: 768px) {
+		text-align: center;
+		position: relative;
+		top: 3.4rem;
+	}
+	@media all and (min-width: 1024px) {
+		top: 4rem;
+	}
+	&--btn{
+	// animated icons for nav-mobile
+		@media all and (max-width: 767px) {
+			position: absolute;
+			bottom: 2.625rem;
+			left: 0.85rem;
+			width: 2.25rem;
+			padding: 1rem;
+			padding-left: 0.85rem;
+			margin: -1rem;
+			margin-left: -0.85rem;
+
+			cursor: pointer;
+			& span {
+				position: absolute;
+				height: 3px;
+				border-radius: 2px;
+				background: $color-one;
+				transition: transform .6s ease;
+
+				&.one {
+					width: 20px;
+					top: 8px;
+					left: 7px;
+				}
+
+				&.two {
+					width: 20px;
+					top: 14px;
+					left: 7px;
+				}
+
+				&.three {
+					width: 20px;
+					top: 20px;
+					left: 7px;
+				}
+			}
+			&:active span {
+				background-color: $color-six;
+			}
+			&.closed span {
+				&.one {
+					width: 20px;
+					top: 13px;
+					left: 5px;
+					transform: rotate(225deg);
+				}
+				&.two {
+					width: 3px;
+					left: 12px;
+				}
+				&.three {
+					width: 20px;
+					top: 13px;
+					left: 5px;
+					-webkit-transform: rotate(-225deg);
+					-moz-transform: rotate(-225deg);
+					transform: rotate(-225deg);
+				}
+			}
+		}
+	}
+	&--active {
+		position: absolute;
+		left: 2.25rem;
+		top: 0.3rem;
+		width: 20px;
+		@media all and (min-width: 768px) {
+			display: none;
+		}
+		@media all and (max-width: 767px) {
+			&--fill {
+				fill: $color-one;
+			}
+			.header_menu--btn:active &--fill {
+				fill: $color-six;
+			}
+		}
+	}
+	&--mobile {
+		// NAV-MOBILE
+		@media all and (max-width: 767px) {
+			position: absolute;
+			width: 100%;
+			top: 10.5rem;
+			right: 0;
+			background-color: $color-w;
+			transition: top 0.75s ease-in-out,
+						z-index 0s 0.75s;
+			box-sizing: border-box;
+			color: $color-two;
+			z-index: 1;
+
+			&.closed {
+				z-index: -1;
+				top: 3.5rem;
+				transition: top 0.75s 0s ease-in-out,
+							z-index 0s;
+			}
+		}	
+	}
+	&--item {
+		@media all and (min-width: 768px) {
+			display: inline-block;
+			margin: 0 2.5rem;
+		}
+		@media all and (max-width: 767px) {
+			border-bottom: 1px solid $color-two;
+			padding: 0.25rem 0 0.25rem 2.25rem;
+		}
+		&:before {
+			content: none;
+		}
+		& a {
+			font-weight: 300;
+			color: $color-two;
+			text-decoration: none;
+
+			@media all and (min-width: 768px) {
+				font-size: 1.5rem;
+				padding-bottom: 3px;
+			}
+			@media all and (min-width: 1024px) {
+				padding-bottom: 18px;
+			}
+			@media all and (max-width: 767px) {
+				font-size: 1.43rem;
+				line-height: 1.43rem;	
+			}
+		}
+		& a:active {
+			color: $color-six;
+		}
+		& a:hover {
+			@media all and (min-width: 768px) {
+				color: $color-six;
+				border-bottom: 2px solid $color-six;
+			}
+		}
+		&--about,
+		&--portfolio,
+		&--contact {
+			@media all and (max-width: 767px) {
+				display: inline-block;
+				width: 20px;
+				margin-right: 0.5rem;
+			}
+			@media all and (min-width: 768px) {
+				display: none;
+			}
+		}
+		&--about{
+			@media all and (max-width: 767px) {
+				height: 20px;
+			}
+		}
+		&--portfolio,
+		&--contact {
+			@media all and (max-width: 767px) {
+				height: 17px;
+			}
+		}
+	}
+	&--icon--fill {
+		@media all and (max-width: 767px) {
+			fill: $color-two;
+			.header_menu--item a:active & {
+				fill: $color-six;
+			}
+		}
+		
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+

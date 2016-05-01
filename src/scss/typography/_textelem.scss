@@ -1,0 +1,65 @@
+// TEXT ELEMENTS
+.p {
+
+}
+.a {
+	font-weight: 700;
+	color: $color-six;
+	text-decoration: none;
+}
+.code {
+	background-color: $color-two;
+	color: $color-w;
+}
+.mark {
+	background-color: $color-six;
+}
+.blockquote {
+	font-size: 20px;
+	font-weight: 300;
+	color: $color-w;
+
+	&:before {
+		content: open-quote;
+	}
+
+	&:after {
+		content: close-quote;
+	}
+
+	&:before, &:after {
+		color: $color-one;
+		font-size: 24px;
+	}
+}
+ul {
+	li {
+		list-style: none;
+	&:before {
+		content:'\25A0';
+		margin-right: 10px;
+		color: $color-six;
+		}
+	}
+} 
+
+ol {
+	li {
+    list-style-type: none;
+    counter-increment: list;
+    &:before {
+    	content: counter(list) ".";
+		color: $color-six;
+		margin-right: 10px;
+    	}
+    }
+}
+.date {
+	font-weight: 600;
+	font-size: .9rem;
+}
+.project_title {
+	font-weight: 300;
+	font-size: 1.5rem;
+	text-transform: uppercase;
+}
