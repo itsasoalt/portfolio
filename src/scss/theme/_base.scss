@@ -83,8 +83,8 @@ body {
 		}
 	}
 }
-.section_sok--father {
-	@media all and (min-width: 1024px) {
+.section--father {
+	@media all and (min-width: 768px) {
 		position: relative;
 		padding-top: 0;
 	}

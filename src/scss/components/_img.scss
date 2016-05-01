@@ -47,6 +47,7 @@ img {
 		border-bottom: solid 2rem $color-four;
 	}
 }
+// INDEX
 .img_index--container {
 	display: flex;
 	justify-content: space-between;
@@ -109,8 +110,31 @@ img {
 	display: block;
 	clear: both;
 }
+.img_ine--left {
+	@media all and (min-width: 768px) {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 30%;
+	}
+}
+.img_ine--right {
+	@media all and (min-width: 768px) {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 30%;
+	}
+}
+.img_ine--move {
+	@media all and (min-width: 768px) {
+		width: 15%;
+		display: block;
+		margin: 1.75rem auto 3rem;
+		float: none;
+	}
+}
 // NAOW
-
 .img_naow {
 	width: 100%;
 }

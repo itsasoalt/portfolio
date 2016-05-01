@@ -268,8 +268,8 @@ body {
       .section_separation {
         padding-top: 1.75rem; } }
 
-@media all and (min-width: 1024px) {
-  .section_sok--father {
+@media all and (min-width: 768px) {
+  .section--father {
     position: relative;
     padding-top: 0; } }
 
@@ -782,6 +782,27 @@ img {
   content: "";
   display: block;
   clear: both; }
+
+@media all and (min-width: 768px) {
+  .img_ine--left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30%; } }
+
+@media all and (min-width: 768px) {
+  .img_ine--right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30%; } }
+
+@media all and (min-width: 768px) {
+  .img_ine--move {
+    width: 15%;
+    display: block;
+    margin: 1.75rem auto 3rem;
+    float: none; } }
 
 .img_naow {
   width: 100%; }
