@@ -733,6 +733,23 @@ img {
   margin-top: 1.75rem;
   margin-bottom: 1.75rem; }
 
+.img_ine {
+  width: 100%; }
+
+.img_ine--xs {
+  width: 30%;
+  float: left;
+  clear: left; }
+
+.img_ine--s {
+  width: 60%;
+  float: right; }
+
+.img_ine--container:after {
+  content: "";
+  display: block;
+  clear: both; }
+
 .img_naow {
   width: 100%; }
 
