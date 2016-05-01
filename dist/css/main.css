@@ -273,6 +273,12 @@ body {
     position: relative;
     padding-top: 0; } }
 
+@media all and (min-width: 768px) {
+  .section--father:after {
+    content: "";
+    clear: both;
+    display: block; } }
+
 /* TITLES */
 h1, h2, h3, h4, h5, h6 {
   margin: 0 auto; }
@@ -814,14 +820,35 @@ img {
 .img_naow--icon {
   width: 20%;
   display: inline-block;
-  float: left;
   margin-right: 2.5%;
   margin-left: 2.5%; }
+  @media all and (min-width: 768px) {
+    .img_naow--icon {
+      width: 40%;
+      margin: 2.5%; } }
+
+@media all and (min-width: 768px) {
+  .img_naow--icon--container {
+    width: 20%;
+    position: absolute;
+    bottom: 1.75rem;
+    right: 1.75rem; } }
 
 .img_naow--icon--container:after {
   content: "";
   display: block;
   clear: both; }
+
+@media all and (min-width: 768px) {
+  .img_naow--xl {
+    width: 40%;
+    display: inline-block;
+    margin: 1.75rem 4%; } }
+
+@media all and (min-width: 1024px) {
+  .img_naow--xl {
+    width: 30%;
+    margin: 1.75rem 1%; } }
 
 .img_sok {
   width: 100%; }

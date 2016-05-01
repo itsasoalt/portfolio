@@ -145,21 +145,41 @@ img {
 .img_naow--icon {
 	width: 20%;
 	display: inline-block;
-	float: left;
 	margin-right: 2.5%;
 	margin-left: 2.5%;
+	@media all and (min-width: 768px) {
+		width: 40%;
+		margin: 2.5%;
+	}
+}
+.img_naow--icon--container {
+	@media all and (min-width: 768px) {
+		width: 20%;
+		position: absolute;
+		bottom: 1.75rem;
+		right: 1.75rem;
+	}
 }
 .img_naow--icon--container:after {
 	content: "";
 	display: block;
 	clear: both;
 }
+.img_naow--xl {
+	@media all and (min-width: 768px) {
+		width: 40%;
+		display: inline-block;
+		margin: 1.75rem 4%;
+	}
+	@media all and (min-width: 1024px) {
+		width: 30%;
+		margin: 1.75rem 1%;
+	}
+}
 // SOKAIRE
 .img_sok {
 	width: 100%;
-	@media all and (min-width: 768px) {
-		
-	}
+	
 }
 .img_sok--logo {
 	@media all and (min-width: 768px) {

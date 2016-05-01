@@ -89,3 +89,10 @@ body {
 		padding-top: 0;
 	}
 }
+.section--father:after {
+	@media all and (min-width: 768px) {
+		content: "";
+		clear: both;
+		display: block;
+	}
+}
