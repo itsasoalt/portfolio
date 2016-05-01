@@ -75,4 +75,17 @@ body {
 			flex-basis: 60%;
 		}
 	}
+
+	&_separation {
+		clear: both;
+		@media all and (min-width: 768px) {
+			padding-top: 1.75rem;
+		}
+	}
+}
+.section_sok--father {
+	@media all and (min-width: 1024px) {
+		position: relative;
+		padding-top: 0;
+	}
 }

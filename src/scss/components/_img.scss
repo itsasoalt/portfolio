@@ -83,6 +83,13 @@ img {
 .img_portfolio--container {
 	margin-bottom: 1.75rem;
 	margin-top: -6rem;
+	@media all and (min-width: 768px) {
+		width: 60%;
+		float: right;
+	}
+	@media all and (min-width: 1024px) {
+		width: 30%;
+	}
 }
 // INEDI
 .img_ine {
@@ -126,11 +133,42 @@ img {
 // SOKAIRE
 .img_sok {
 	width: 100%;
+	@media all and (min-width: 768px) {
+		
+	}
+}
+.img_sok--logo {
+	@media all and (min-width: 768px) {
+		width: 50%;
+	}
+	@media all and (min-width: 1024px) {
+		width: 100%;
+	}
+}
+.img_sok--box {
+	@media all and (min-width: 768px) {
+		margin: 0 auto;
+		width: 75%;
+	}
+	@media all and (min-width: 1024px) {
+		width: 35%;
+		margin: 0;
+		margin-bottom: 1.75rem;
+	}
 }
 .img_sok--rotate {
 	transform: rotate(90deg);
 	height: 100px;
 	margin: 0 15%;
+	@media all and (min-width: 768px) {
+		transform: rotate(0deg);
+		margin: 0;
+		margin-left: 10%;
+	}
+	@media all and (min-width: 1024px) {
+		height: 180px;
+		margin: 1rem 5% 0;
+	}
 }
 .img_sok--xs {
 	display: inline-block;
@@ -138,6 +176,11 @@ img {
 	margin-right: 2.5%;
 	margin-left: 2.5%;
 	float: left;
+	@media all and (min-width: 1024px) {
+		position: absolute;
+		float: right;
+		right: 0;
+	}
 }
 .img_sok--md {
 	@media all and (min-width: 768px) {
@@ -145,6 +188,35 @@ img {
 		margin-right: 1.5%;
 		margin-left: 1.5%;
 		float: left;
+	}
+	@media all and (min-width: 1024px) {
+		position: absolute;
+		width: 15%;
+		right: 0;
+	}
+}
+@media all and (min-width: 1024px) {
+	.img_sok--col--uno {
+		top: 0;
+	}
+	.img_sok--col--dos {
+		top: 200px;
+	}
+	.img_sok--col--tres {
+		top: 400px;
+	}
+}
+
+.img_sok--xl {
+	@media all and (min-width: 768px) {
+		width: 60%;
+		float: right;
+	}
+	@media all and (min-width: 1024px) {
+		position: absolute;
+		top: 0;
+		width: 40%;
+		right: 20%;
 	}
 }
 // CONTACT
