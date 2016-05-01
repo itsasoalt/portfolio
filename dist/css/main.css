@@ -382,6 +382,15 @@ ol li {
     color: #78A9D6;
     margin-right: 10px; }
 
+.date {
+  font-weight: 600;
+  font-size: .9rem; }
+
+.project_title {
+  font-weight: 300;
+  font-size: 1.5rem;
+  text-transform: uppercase; }
+
 .header {
   position: absolute;
   top: 0;
