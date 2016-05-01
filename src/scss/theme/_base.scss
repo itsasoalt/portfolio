@@ -54,10 +54,15 @@ body {
 	&--highlight {
 		background-color: $color-four;
 		align-items: flex-start;
+		
 		&--bqspace {
 			@media all and (min-width: 768px) {
 				padding-bottom: 3rem;
 			}
+		}
+		&--plus {
+			padding-bottom: 6rem;
+			margin-top: 3rem;
 		}
 	}
 	&--column {

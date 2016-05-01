@@ -249,6 +249,9 @@ body {
     @media all and (min-width: 768px) {
       .section--highlight--bqspace {
         padding-bottom: 3rem; } }
+    .section--highlight--plus {
+      padding-bottom: 6rem;
+      margin-top: 3rem; }
   @media all and (min-width: 768px) {
     .section--column {
       -webkit-flex-basis: 30%;
@@ -396,8 +399,7 @@ ol li {
   color: #fff;
   border: 3px solid #FF0091;
   height: 3.5rem;
-  min-width: 12rem;
-  max-width: 24rem;
+  width: 12rem;
   position: relative;
   margin: 0 auto;
   display: block;
@@ -417,6 +419,8 @@ ol li {
     border-left: solid 1rem transparent;
     border-right: solid 1rem #fff;
     border-bottom: solid 1rem #fff; }
+  .btn--long {
+    width: 24rem; }
   .btn--alt {
     background-color: #fff;
     color: #FF0091;
@@ -735,6 +739,10 @@ img {
 
 .img_portfolio {
   width: 100%; }
+
+.img_portfolio--container {
+  margin-bottom: 1.75rem;
+  margin-top: -6rem; }
 
 .img_ine {
   width: 100%; }

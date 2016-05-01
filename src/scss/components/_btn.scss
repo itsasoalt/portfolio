@@ -11,8 +11,7 @@
 	border: 3px solid $color-one;
 
 	height: 3.5rem;
-	min-width: 12rem;
-	max-width: 24rem;
+	width: 12rem;
 	position: relative;
 	margin: 0 auto;
 	display: block;
@@ -35,7 +34,9 @@
 		border-right: solid 1rem $color-w;
 		border-bottom: solid 1rem $color-w;
 	}
-	
+	&--long {
+		width: 24rem;
+	}
 	&--alt {
 		background-color: $color-w;
 		color: $color-one;
