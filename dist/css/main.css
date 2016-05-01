@@ -717,6 +717,11 @@ img {
   border-right: solid 1rem #FF0091;
   border-bottom: solid 1rem #FF0091; }
 
+@media all and (min-width: 768px) {
+  .img--three:after {
+    border-right: solid 2rem #FDFBE9;
+    border-bottom: solid 2rem #FDFBE9; } }
+
 @media all and (min-width: 1024px) {
   .img--four:after {
     border-right: solid 2rem #FDFBE9;

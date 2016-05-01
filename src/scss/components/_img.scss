@@ -41,6 +41,12 @@ img {
 	border-right: solid 1rem $color-one;
 	border-bottom: solid 1rem $color-one;
 }
+.img--three:after {
+	@media all and (min-width: 768px) {
+		border-right: solid 2rem $color-four;
+		border-bottom: solid 2rem $color-four;
+	}
+}
 .img--four:after {
 	@media all and (min-width: 1024px) {
 		border-right: solid 2rem $color-four;
