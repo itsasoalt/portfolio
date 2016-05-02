@@ -654,16 +654,28 @@ ol li {
     .header_menu--item a:active .header_menu--icon--fill {
       fill: #78A9D6; }
 
-.btn_port--handheld {
+.menu_port--handheld {
   display: none; }
 
-.btn_port--not-handheld {
+.menu_port--not-handheld {
   display: inline; }
 
 @media all and (max-width: 768px) {
-  .btn_port--handheld {
+  .menu_port--handheld {
     display: inline; }
-  .btn_port--not-handheld {
+  .menu_port--not-handheld {
+    display: none; } }
+
+.btn--handheld {
+  display: none; }
+
+.btn--not-handheld {
+  display: block; }
+
+@media all and (max-width: 768px) {
+  .btn--handheld {
+    display: block; }
+  .btn--not-handheld {
     display: none; } }
 
 .contact_info {
