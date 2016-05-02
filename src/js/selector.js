@@ -1,6 +1,6 @@
 $(document).ready(function() {
 	$('#sokaire').hide();
-	$('#indei').hide();
+	$('#inedi').hide();
 	$('#naow').hide();
 
 	$('select').change(function(ev){
