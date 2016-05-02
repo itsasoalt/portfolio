@@ -651,6 +651,18 @@ ol li {
     .header_menu--item a:active .header_menu--icon--fill {
       fill: #78A9D6; }
 
+.btn_port--handheld {
+  display: none; }
+
+.btn_port--not-handheld {
+  display: inline; }
+
+@media handheld {
+  .btn_port--handheld {
+    display: inline; }
+  .btn_port--not-handheld {
+    display: none; } }
+
 .contact_info {
   display: block;
   padding: .5rem; }
