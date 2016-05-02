@@ -184,14 +184,18 @@
 		}
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
+// caso especial boton del portfolio
+.btn_port--handheld {
+	display: none;
+}
+.btn_port--not-handheld {
+	display: inline;
+}
+@media all and (max-width: $tablet) {
+	.btn_port--handheld {
+		display: inline;
+	}
+	.btn_port--not-handheld {
+		display: none;
+	}
+}

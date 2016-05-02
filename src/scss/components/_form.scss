@@ -50,3 +50,24 @@ textarea:focus {
 .hide {
 	display: none;
 }
+
+select {
+	display: block;
+	margin:0;
+	padding: 0 1rem;
+	width: 100%;
+	max-width: 24rem;
+	height: 3.5rem;
+
+	appearance: none;
+	border-radius: 0;
+	background-color: $color-w;
+	border: 3px solid $color-one;
+	background-image: url(../img/selector--corner.png);
+	background-position: right bottom;
+	background-repeat: no-repeat;
+	background-size: 2rem;
+
+	font-size: 1rem;
+	color: $color-two;
+}
