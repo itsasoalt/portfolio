@@ -14,7 +14,7 @@ h4, h5, h6 {
 	color: $color-one;
 	white-space: nowrap;
 	transition: 0s 0.2s;
-	@media all and (min-width: 550px) {
+	@media all and (min-width: $tablet) {
 		font-size: 3rem;
 		line-height: 3.5rem;
 	}
@@ -26,7 +26,7 @@ h4, h5, h6 {
 	font-weight: 300;
 	transition: 0s 0.4s;
 	margin-bottom: 2rem;
-	@media all and (min-width: 550px) {
+	@media all and (min-width: $tablet) {
 		font-size: 1.4rem;
 	}
 }
