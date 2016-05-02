@@ -9,7 +9,7 @@
 
 		&--label {
 			display: none;
-			@media all and (min-width: 768px) {
+			@media all and (min-width: $tablet) {
 				display: inline;
 				font-weight: bold;
 				margin-right: .5rem;
@@ -23,7 +23,7 @@
 			margin-right: .5rem;
 			margin-bottom: -.25rem;
 		}
-		@media all and (min-width: 1024px) {
+		@media all and (min-width: $desktop) {
 			& a:hover {
 				color: $color-six;
 			}
@@ -42,11 +42,11 @@
 		position: relative;
 	}
 	&_img--controler {
-		@media all and (min-width: 768px) {
+		@media all and (min-width: $tablet) {
 			width: 40%;
 			float: left;
 		}
-		@media all and (min-width: 1024px) {
+		@media all and (min-width: $desktop) {
 			position: absolute;
 			float: none;
 			width: 20rem;

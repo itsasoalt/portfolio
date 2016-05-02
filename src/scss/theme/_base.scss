@@ -4,7 +4,7 @@ body {
 	font-weight: 400;
 	font-size: 14px; //1rem
 	line-height: 1.7rem;
-	@media all and (min-width: 1024px) {
+	@media all and (min-width: $desktop) {
 		font-size: 16px;
 		line-height: 1.75rem;
 	}
@@ -15,23 +15,23 @@ body {
 
 	margin: 0;
 	padding: 1rem;
-	@media all and (min-width: 768px) {
+	@media all and (min-width: $tablet) {
 		padding: 1rem 2rem;
 	}
-	@media all and (min-width: 1024px) {
+	@media all and (min-width: $desktop) {
 		padding: 1rem 3rem;
 	}
 
 	&_container {
 		margin-top: 10.5rem;
-		@media all and (min-width: 1024px) {
+		@media all and (min-width: $desktop) {
 			margin-top: 17.5rem;
 		}
 	}
 	&_container--flex {
 		display: flex;
 		flex-direction: column;
-		@media all and (min-width: 768px) {
+		@media all and (min-width: $tablet) {
 			flex-direction: row;
 			justify-content: space-between;
 			align-items: flex-end;
@@ -39,13 +39,13 @@ body {
 	}
 	&_container--blockquote {
 		background-color: $color-two;
-		@media all and (min-width: 768px) {
+		@media all and (min-width: $tablet) {
 			max-width: 40%;
 			float: right;
 			margin-bottom: 2rem;
 		}
 		&--hl {
-			@media all and (min-width: 768px) {
+			@media all and (min-width: $tablet) {
 				margin-top: -3rem;
 			}
 		}
@@ -56,7 +56,7 @@ body {
 		align-items: flex-start;
 		
 		&--bqspace {
-			@media all and (min-width: 768px) {
+			@media all and (min-width: $tablet) {
 				padding-bottom: 3rem;
 			}
 		}
@@ -65,34 +65,32 @@ body {
 			margin-top: 3rem;
 		}
 	}
-	&--column {
-		@media all and (min-width: 768px) {
-			flex-basis: 30%;
-		}
-	}
-	&--column--left {
-		@media all and (min-width: 768px) {
-			flex-basis: 60%;
-		}
-	}
-
+	
 	&_separation {
 		clear: both;
-		@media all and (min-width: 768px) {
+		@media all and (min-width: $tablet) {
 			padding-top: 1.75rem;
 		}
 	}
-}
-.section--father {
-	@media all and (min-width: 768px) {
-		position: relative;
-		padding-top: 0;
-	}
-}
-.section--father:after {
-	@media all and (min-width: 768px) {
-		content: "";
-		clear: both;
-		display: block;
+	// cosas que solo aparecen a partir de tablet
+	@media all and (min-width: $tablet) {	
+		&--column {
+			flex-basis: 30%;
+			
+			&--left {
+				flex-basis: 60%;
+			}
+		}
+			
+		&--father {
+			position: relative;
+			padding-top: 0;
+
+			&:after {
+				content: "";
+				clear: both;
+				display: block;
+			}
+		}
 	}
 }
