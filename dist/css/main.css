@@ -975,3 +975,23 @@ textarea:focus {
 
 .hide {
   display: none; }
+
+select {
+  display: block;
+  margin: 0;
+  padding: 0 1rem;
+  width: 100%;
+  max-width: 24rem;
+  height: 3.5rem;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border-radius: 0;
+  background-color: #fff;
+  border: 3px solid #FF0091;
+  background-image: url(../img/selector--corner.png);
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  background-size: 2rem;
+  font-size: 1rem;
+  color: #1D232F; }
