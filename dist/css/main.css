@@ -657,7 +657,7 @@ ol li {
 .btn_port--not-handheld {
   display: inline; }
 
-@media handheld {
+@media all and (max-width: 768px) {
   .btn_port--handheld {
     display: inline; }
   .btn_port--not-handheld {

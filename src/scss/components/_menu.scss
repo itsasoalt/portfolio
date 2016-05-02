@@ -191,7 +191,7 @@
 .btn_port--not-handheld {
 	display: inline;
 }
-@media handheld {
+@media all and (max-width: $tablet) {
 	.btn_port--handheld {
 		display: inline;
 	}
