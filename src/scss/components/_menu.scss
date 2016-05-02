@@ -184,18 +184,33 @@
 		}
 	}
 }
-// caso especial boton del portfolio
-.btn_port--handheld {
+// caso especial boton del portfolio en el menu
+.menu_port--handheld {
 	display: none;
 }
-.btn_port--not-handheld {
+.menu_port--not-handheld {
 	display: inline;
 }
 @media all and (max-width: $tablet) {
-	.btn_port--handheld {
+	.menu_port--handheld {
 		display: inline;
 	}
-	.btn_port--not-handheld {
+	.menu_port--not-handheld {
+		display: none;
+	}
+}
+// caso especial boton del portfolio
+.btn--handheld {
+	display: none;
+}
+.btn--not-handheld {
+	display: block;
+}
+@media all and (max-width: $tablet) {
+	.btn--handheld {
+		display: block;
+	}
+	.btn--not-handheld {
 		display: none;
 	}
 }
